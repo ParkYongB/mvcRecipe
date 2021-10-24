@@ -1,0 +1,169 @@
+@charset "UTF-8";
+html, body {
+   margin:0;
+   padding:0;
+   height:100%;
+}
+.contents-wrap {
+   min-height:57.1%;
+   position:relative;
+   padding-bottom:30px;/* footer height */
+}
+footer {
+	position:absoulte;
+	bottom:0;
+	margin-top:auto;
+}
+
+.content{
+	font: 400 14px 'NotoSansKR';
+}
+
+.tot_count{
+	margin-left: 30px;
+	margin-top: 30px;
+}
+
+.recipe-detail-main{
+	width:1000px;
+	margin: 0 auto; /* 중앙정렬 */
+}
+.detail_title{
+	text-align:left;
+	margin-left: 10px;
+}
+.detail-content{
+	text-align: center;
+}
+.detail-img{
+	max-width: 500px;
+}
+.btn_click{
+	float: right;
+	margin-top: -5px;
+}
+
+/* 리스트 기본 불릿 제거 */
+ul{
+	list-style:none;
+}
+
+/*댓글쪽*/
+div#reply_div {
+   padding : 5px 10px 40px 10px;
+   margin-top : 10px;
+   background-color : #eeeeee;
+}
+form#re_form {
+   width : 750px;
+   border : none;
+}
+span.re-title {
+   color : #000;
+   font-size : 12pt;
+   line-height : 200%;
+}
+span.letter-count {
+   font-size : 11pt;
+   color : #999;
+}
+span.form-id {
+   padding-left : 93px;
+   color : #000;
+}
+textarea.rep-content {
+   width : 100%;
+   height : 180px;
+   margin : 10px 10px;
+}
+div#re_first {
+   float : left;
+   width : 19%;	/*숫자가 클수록 오른쪽으로 이동*/
+   padding-left : 0;
+   margin-bottom : 10px;
+}
+div#re_second {
+   float : right;
+   width : 14%;		/*숫자가 클수록 왼쪽으로 이동*/
+   margin-bottom : 10px;
+   padding-left : 50px;
+}
+div#loading {
+   width : 100px;
+   margin : 0 auto;
+}
+div.paging-button {
+   text-align : right;
+}
+div#output {
+   clear : both;
+}
+form#mre_form {
+   border : none;
+   margin : 5px;
+}
+
+/* input2 스타일 */
+.input2 {
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid #CCC;
+  color: #555;
+  box-sizing: border-box;
+  font-family: 'Arvo';
+  font-size: 18px;
+  height: 50px;
+  left: 100px;
+  margin: 1px 3px 0 -100px;
+  padding: 10px 0px;
+  position: relative;
+  top: 50%;
+  width: 500px;
+}
+
+.underline {
+  background-color: dodgerblue;
+  display: inline-block;
+  height: 2px;
+  left: 100px;
+  margin-top: 5px;
+  position: absolute;
+  top: 185px;
+  -webkit-transform: scale(0, 1);
+  transform: scale(0, 1);
+  -webkit-transition: all 0.5s linear;
+  transition: all 0.5s linear;
+  width: 202px;
+}
+.mypage-div {
+	width : 360px;
+	float : left;
+	padding : 5px;
+}
+.my-photo {
+	object-fit : cover;
+	/* 정사각형이 아니라 직사각형일 경우 원 안에 보여지게 할 중심 이미지의 위치를 지정 */
+	object-position : 50% 50%;
+	/* 사각형의 모서리의 둥근 정도를 지정하는 속성인데 50% 로 지정하면 완전한 원이 됨 */
+	border-radius : 50%;
+}
+
+/* 스크롤바 디자인 */
+::-webkit-scrollbar { 
+	width: 10px;
+}
+::-webkit-scrollbar-track {
+	background-color:#fff;
+}
+::-webkit-scrollbar-thumb {
+	background:#f76f31;
+}
+::-webkit-scrollbar-thumb:hover {
+	background:#f76f31;
+}
+::-webkit-scrollbar-thumb:active {
+	background:#f76f31;
+}
+::-webkit-scrollbar-button {
+	display:none;
+}
